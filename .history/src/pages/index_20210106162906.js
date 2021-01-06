@@ -74,7 +74,7 @@ export default function Landing() {
           </div>
         </div>
 
-        <section className="pb-20 bg-green-700 -mt-36">
+        <section className="pb-20 bg-green-700 -mt-12">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center mt-32">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">

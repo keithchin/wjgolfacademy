@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 export default function Footer() {
   return (
@@ -32,22 +31,24 @@ export default function Footer() {
                 Find us on any of these platforms, we respond 1-2 business days.
               </h5>
               <div className="mt-6">
-                <Link to="https://www.facebook.com/wjgolfacademy">
-                  <button
-                    className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                    type="button"
-                  >
-                    <i className="flex fab fa-facebook-square"></i>
-                  </button>
-                </Link>
-                <Link to="https://www.instagram.com/wjgolfacademy">
-                  <button
-                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                    type="button"
-                  >
-                    <i className="flex fab fa-instagram"></i>
-                  </button>
-                </Link>
+                <button
+                  className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i className="flex fab fa-twitter"></i>
+                </button>
+                <button
+                  className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i className="flex fab fa-facebook-square"></i>
+                </button>
+                <button
+                  className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <i className="flex pb-4 fab fa-instagram"></i>
+                </button>
               </div>
             </div>
             <div className="w-full lg:w-6/12 px-4">
