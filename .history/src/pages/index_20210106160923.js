@@ -459,7 +459,7 @@ export default function Landing() {
                 </h2>
               </div>
             </div>
-            {/* <div className="flex flex-wrap mt-12 justify-center">
+            <div className="flex flex-wrap mt-12 justify-center">
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12  inline-flex items-center justify-center">
                   <img
@@ -502,7 +502,6 @@ export default function Landing() {
                 </p>
               </div>
             </div>
-          </div> */}
           </div>
         </section>
         <section

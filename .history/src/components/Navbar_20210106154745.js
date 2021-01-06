@@ -62,7 +62,7 @@ export default function Navbar(props, color) {
               ></i>
             </button>
           </div>
-          <div
+          {/* <div
             className={
               "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
               (navbarOpen ? " block rounded shadow-lg" : " hidden")
@@ -70,7 +70,7 @@ export default function Navbar(props, color) {
             id="example-navbar-warning"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              {/* <button
+              <button
                 className={
                   "text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 " +
                   bgColor

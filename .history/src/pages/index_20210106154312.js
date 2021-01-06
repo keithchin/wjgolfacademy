@@ -216,7 +216,7 @@ export default function Landing() {
                       <div className="flex items-center">
                         <a
                           href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                          className="font-bold text-gray-800 mt-8 text-xlhover:opacity-50"
+                          className="font-bold text-gray-800 mt-8 text-md hover:opacity-50"
                         >
                           Check out our services!
                         </a>
@@ -399,34 +399,6 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-wrap">
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("../images/aru.png")}
-                    className=" max-w-full mx-auto"
-                    style={{ maxWidth: "180px" }}
-                  />
-                  <div className="pt-8 text-center">
-                    <h5 className="text-xl font-bold">V.Arumugam</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Teaching Professional
-                    </p>
-                    <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=6441">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -459,7 +431,7 @@ export default function Landing() {
                 </h2>
               </div>
             </div>
-            {/* <div className="flex flex-wrap mt-12 justify-center">
+            <div className="flex flex-wrap mt-12 justify-center">
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12  inline-flex items-center justify-center">
                   <img
@@ -502,7 +474,6 @@ export default function Landing() {
                 </p>
               </div>
             </div>
-          </div> */}
           </div>
         </section>
         <section

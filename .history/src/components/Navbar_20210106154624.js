@@ -70,7 +70,7 @@ export default function Navbar(props, color) {
             id="example-navbar-warning"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              {/* <button
+              <button
                 className={
                   "text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 " +
                   bgColor
@@ -134,14 +134,14 @@ export default function Navbar(props, color) {
                 >
                   Contact Us
                 </a>
-              </div> */}
+              </div>
               <li className="flex items-center">
                 <a
                   className={
                     (props.transparent
                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
-                    "  py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
                   href="https://www.facebook.com/wjgolfacademy"
                 >
@@ -163,7 +163,7 @@ export default function Navbar(props, color) {
                     (props.transparent
                       ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
-                    " px-6 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
                   href="https://www.instagram.com/wjgolfacademy"
                 >

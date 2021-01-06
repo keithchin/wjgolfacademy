@@ -40,15 +40,13 @@ export default function Landing() {
                   the best courses in Malaysia.
                 </p>
                 <div className="mt-12">
-                  <ReactWhatsapp number="60122809559">
-                    <button
-                      className="text-white bg-transparent border border-solid border-white hover:bg-white hover:text-black active:bg-white font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                      style={{ transition: "all .15s ease" }}
-                    >
-                      Contact Us
-                    </button>
-                  </ReactWhatsapp>
+                  <button
+                    className="text-white bg-transparent border border-solid border-white hover:bg-white hover:text-black active:bg-white font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                    style={{ transition: "all .15s ease" }}
+                  >
+                    <Link to="#contact">Contact Us</Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -133,7 +131,7 @@ export default function Landing() {
           </div>
         </section>
 
-        <section className="bg-gray-100 relative py-20">
+        <section className="relative py-20">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
             style={{ height: "80px", transform: "translateZ(0)" }}
@@ -148,7 +146,7 @@ export default function Landing() {
               y="0"
             >
               <polygon
-                className="text-gray-100 fill-current"
+                className="text-white fill-current"
                 points="2560 0 2560 100 0 100"
               ></polygon>
             </svg>
@@ -159,13 +157,13 @@ export default function Landing() {
               <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
                 <img
                   alt="..."
-                  className="max-w-full rounded-lg shadow-xl"
-                  src="https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-9/78976519_1613069965501900_6873021230740406272_n.jpg?_nc_cat=100&ccb=2&_nc_sid=8bfeb9&_nc_ohc=AdGlZB2QeQ4AX_EE4C0&_nc_ht=scontent.fkul16-1.fna&oh=5077f5e82e9df72056a297d8791111f6&oe=60193943"
+                  className="max-w-full rounded-lg shadow-lg"
+                  src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
-                  <h3 className="text-4xl mb-2 font-bold leading-normal">
+                  <h3 className="text-3xl mb-2 font-semibold leading-normal">
                     Ready to take your game to the next level?
                   </h3>
                   <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"></p>
@@ -216,7 +214,7 @@ export default function Landing() {
                       <div className="flex items-center">
                         <a
                           href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                          className="font-bold text-gray-800 mt-8 text-xlhover:opacity-50"
+                          className="font-bold text-gray-800 mt-8 hover:opacity-75"
                         >
                           Check out our services!
                         </a>
@@ -249,41 +247,27 @@ export default function Landing() {
                   <div className="pt-7 text-center">
                     <h5 className="text-xl font-bold">Wilson Choo</h5>
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Founder / Coach
+                      Founder / Touring Professional
                     </p>
                     <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=14869">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
-                      <Link to="https://www.facebook.com/wilsonchoogolf">
-                        <button
-                          className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-facebook-f"></i>
-                        </button>
-                      </Link>
-                      <ReactWhatsapp number="1-212-736-5000">
-                        <button
-                          className="bg-green-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-whatsapp"></i>
-                        </button>
-                      </ReactWhatsapp>
-                      <Link to="https://www.instagram.com/badgerstyle23">
-                        <button
-                          className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-instagram"></i>
-                        </button>
-                      </Link>
+                      <button
+                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-twitter"></i>
+                      </button>
+                      <button
+                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-facebook-f"></i>
+                      </button>
+                      <button
+                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-dribbble"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -302,38 +286,18 @@ export default function Landing() {
                       Founder
                     </p>
                     <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=27150">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
-                      <Link to="https://www.facebook.com/justinchin46">
-                        <button
-                          className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-facebook-f"></i>
-                        </button>
-                      </Link>
-                      <ReactWhatsapp number="1-212-736-5000">
-                        <button
-                          className="bg-green-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-whatsapp"></i>
-                        </button>
-                      </ReactWhatsapp>
-                      <Link to="https://www.instagram.com/justin.chin33">
-                        <button
-                          className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-instagram"></i>
-                        </button>
-                      </Link>
+                      <button
+                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-google"></i>
+                      </button>
+                      <button
+                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-facebook-f"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -352,14 +316,24 @@ export default function Landing() {
                       Touring Professional
                     </p>
                     <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=6386">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
+                      <button
+                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-google"></i>
+                      </button>
+                      <button
+                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-twitter"></i>
+                      </button>
+                      <button
+                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-instagram"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -378,15 +352,18 @@ export default function Landing() {
                       Touring Professional
                     </p>
                     <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=12533">
+                      <Link to="https://www.facebook.com/kheng.h.khor">
                         <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                          className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                           type="button"
                         >
-                          <i className="fas fa-golf-ball"></i>
+                          <i className="fab fa-facebook-f"></i>
                         </button>
                       </Link>
-                      <ReactWhatsapp number="1-212-736-5000">
+                      <ReactWhatsapp
+                        number="1-212-736-5000"
+                        message="Hello World!!!"
+                      >
                         <button
                           className="bg-green-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                           type="button"
@@ -394,34 +371,14 @@ export default function Landing() {
                           <i className="fab fa-whatsapp"></i>
                         </button>
                       </ReactWhatsapp>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-wrap">
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("../images/aru.png")}
-                    className=" max-w-full mx-auto"
-                    style={{ maxWidth: "180px" }}
-                  />
-                  <div className="pt-8 text-center">
-                    <h5 className="text-xl font-bold">V.Arumugam</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Teaching Professional
-                    </p>
-                    <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=6441">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
+                      <button
+                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <Link to="https://www.instagram.com/badgerstyle23">
+                          <i className="fab fa-instagram"></i>
+                        </Link>{" "}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -459,7 +416,7 @@ export default function Landing() {
                 </h2>
               </div>
             </div>
-            {/* <div className="flex flex-wrap mt-12 justify-center">
+            <div className="flex flex-wrap mt-12 justify-center">
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12  inline-flex items-center justify-center">
                   <img
@@ -502,7 +459,6 @@ export default function Landing() {
                 </p>
               </div>
             </div>
-          </div> */}
           </div>
         </section>
         <section
