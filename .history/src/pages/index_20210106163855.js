@@ -214,7 +214,7 @@ export default function Landing() {
                       <div className="flex items-center">
                         <a
                           href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                          className="font-bold text-gray-800 mt-8 ml-16 text-xlhover:opacity-50"
+                          className="font-bold text-gray-800 mt-8 ml-8 text-xlhover:opacity-50"
                         >
                           Check out our services!
                         </a>

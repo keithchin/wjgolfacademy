@@ -163,7 +163,7 @@ export default function Landing() {
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
-                  <h3 className="text-4xl mb-2 mt-2 font-bold leading-normal">
+                  <h3 className="text-4xl mb-2 font-bold leading-normal">
                     Ready to take your game to the next level?
                   </h3>
                   <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"></p>
@@ -214,7 +214,7 @@ export default function Landing() {
                       <div className="flex items-center">
                         <a
                           href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                          className="font-bold text-gray-800 mt-8 ml-16 text-xlhover:opacity-50"
+                          className="font-bold text-gray-800 mt-8 text-xlhover:opacity-50"
                         >
                           Check out our services!
                         </a>
