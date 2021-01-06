@@ -42,7 +42,7 @@ export default function Footer() {
                 </Link>
                 <Link to="https://www.instagram.com/wjgolfacademy">
                   <button
-                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mx-2"
+                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none "
                     type="button"
                   >
                     <i className="flex fab fa-instagram"></i>

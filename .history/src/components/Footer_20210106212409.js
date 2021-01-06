@@ -28,13 +28,13 @@ export default function Footer() {
           <div className="flex flex-wrap">
             <div className="w-full lg:w-6/12 px-4">
               <h4 className="text-3xl font-semibold">Let's keep in touch!</h4>
-              <h5 className="text-lg mt-4 mb-2 text-gray-700">
+              <h5 className="text-lg mt-0 mb-2 text-gray-700">
                 Find us on any of these platforms, we respond 1-2 business days.
               </h5>
               <div className="mt-6">
                 <Link to="https://www.facebook.com/wjgolfacademy">
                   <button
-                    className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
+                    className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                     type="button"
                   >
                     <i className="flex fab fa-facebook-square"></i>
@@ -42,7 +42,7 @@ export default function Footer() {
                 </Link>
                 <Link to="https://www.instagram.com/wjgolfacademy">
                   <button
-                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mx-2"
+                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                     type="button"
                   >
                     <i className="flex fab fa-instagram"></i>

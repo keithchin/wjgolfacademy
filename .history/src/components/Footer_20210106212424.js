@@ -34,7 +34,7 @@ export default function Footer() {
               <div className="mt-6">
                 <Link to="https://www.facebook.com/wjgolfacademy">
                   <button
-                    className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none"
+                    className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                     type="button"
                   >
                     <i className="flex fab fa-facebook-square"></i>
@@ -42,7 +42,7 @@ export default function Footer() {
                 </Link>
                 <Link to="https://www.instagram.com/wjgolfacademy">
                   <button
-                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mx-2"
+                    className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                     type="button"
                   >
                     <i className="flex fab fa-instagram"></i>
