@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 import ReactWhatsapp from "react-whatsapp";
+import TeamIndex from "../components/TeamIndex";
 
 export default function Landing() {
   return (
@@ -248,212 +248,9 @@ export default function Landing() {
             </div>
           </div>
         </section>
-
+        {/* Team Section */}
         <section className="pt-20 pb-48">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center text-center mb-24">
-              <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Our Team</h2>
-                <p className="text-lg leading-relaxed m-4 text-gray-600"></p>
-              </div>
-            </div>
-            <div
-              className="flex flex-wrap"
-              data-sal="slide-up"
-              data-sal-duration="10000"
-              data-sal-delay="15000"
-              data-sal-easing="ease"
-            >
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("../images/wilson.png")}
-                    className=" max-w-full mx-auto"
-                    style={{ maxWidth: "180px" }}
-                  />
-                  <div className="pt-7 text-center">
-                    <h5 className="text-xl font-bold">Wilson Choo</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Founder / Coach
-                    </p>
-                    <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=14869">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
-                      <Link to="https://www.facebook.com/wilsonchoogolf">
-                        <button
-                          className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-facebook-f"></i>
-                        </button>
-                      </Link>
-                      <ReactWhatsapp number="1-212-736-5000">
-                        <button
-                          className="bg-green-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-whatsapp"></i>
-                        </button>
-                      </ReactWhatsapp>
-                      <Link to="https://www.instagram.com/badgerstyle23">
-                        <button
-                          className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-instagram"></i>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("../images/justin-blonde.png")}
-                    className=" max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
-                  <div className="pt-8 text-center">
-                    <h5 className="text-xl font-bold">Justin Chin</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Founder
-                    </p>
-                    <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=27150">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
-                      <Link to="https://www.facebook.com/justinchin46">
-                        <button
-                          className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-facebook-f"></i>
-                        </button>
-                      </Link>
-                      <ReactWhatsapp number="1-212-736-5000">
-                        <button
-                          className="bg-green-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-whatsapp"></i>
-                        </button>
-                      </ReactWhatsapp>
-                      <Link to="https://www.instagram.com/justin.chin33">
-                        <button
-                          className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-instagram"></i>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-5 py-1">
-                  <img
-                    alt="..."
-                    src={require("../images/danny-chia.png")}
-                    className=" max-w-full mx-auto"
-                    style={{ maxWidth: "140px", maxHeight: "130px" }}
-                  />
-                  <div className="pt-8 text-center">
-                    <h5 className="text-xl font-bold">Danny Chia</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Touring Professional
-                    </p>
-                    <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=6386">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("../images/kheng-hwai.png")}
-                    className=" max-w-full mx-auto "
-                    style={{ maxWidth: "180px" }}
-                  />
-                  <div className="pt-7 text-center">
-                    <h5 className="text-xl font-bold">Khor Kheng Hwai</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Touring Professional
-                    </p>
-                    <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=12533">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
-                      <ReactWhatsapp number="1-212-736-5000">
-                        <button
-                          className="bg-green-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fab fa-whatsapp"></i>
-                        </button>
-                      </ReactWhatsapp>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-wrap">
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src={require("../images/aru.png")}
-                    className=" max-w-full mx-auto"
-                    style={{ maxWidth: "180px" }}
-                  />
-                  <div className="pt-8 text-center">
-                    <h5 className="text-xl font-bold">V.Arumugam</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Teaching Professional
-                    </p>
-                    <div className="mt-6">
-                      <Link to="http://www.owgr.com/en/Ranking/PlayerProfile.aspx?playerID=6441">
-                        <button
-                          className="bg-yellow-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                          type="button"
-                        >
-                          <i className="fas fa-golf-ball"></i>
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <TeamIndex />
         </section>
 
         <section className="pb-20 relative block bg-gray-900">
@@ -540,65 +337,16 @@ export default function Landing() {
               <div className="w-full lg:w-6/12 px-4">
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
                   <div className="flex-auto p-5 lg:p-10">
-                    <h4 className="text-2xl font-semibold">
-                      Want to work with us?
-                    </h4>
-                    <p className="leading-relaxed mt-1 mb-4 text-gray-600">
-                      Complete this form and we will get back to you in 24
-                      hours.
-                    </p>
-                    <div className="relative w-full mb-3 mt-8">
-                      <label
-                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        htmlFor="full-name"
-                      >
-                        Full Name
-                      </label>
-                      <input
-                        type="text"
-                        className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                        placeholder="Full Name"
-                        style={{ transition: "all .15s ease" }}
-                      />
-                    </div>
-
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        htmlFor="email"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                        placeholder="Email"
-                        style={{ transition: "all .15s ease" }}
-                      />
-                    </div>
-
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        htmlFor="message"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        rows="4"
-                        cols="80"
-                        className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                        placeholder="Type a message..."
-                      />
-                    </div>
-                    <div className="text-center mt-6">
-                      <button
-                        className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                        style={{ transition: "all .15s ease" }}
-                      >
-                        Send Message
-                      </button>
+                    <div>
+                      <iframe
+                        src="https://www.instagram.com/wjgolfacademy/embed"
+                        frameborder="0"
+                        allowfullscreen
+                        scrolling="no"
+                        allowtransparency
+                        width="320"
+                        height="320"
+                      ></iframe>
                     </div>
                   </div>
                 </div>

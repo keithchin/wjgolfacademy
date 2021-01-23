@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import GoogleAds from "../components/GoogleAds";
 
 export default function Footer() {
   return (
@@ -27,10 +26,6 @@ export default function Footer() {
         </div>
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap">
-            <div className="ad-class">
-              {/* add your slot id  */}
-              <GoogleAds slot="2434444" />
-            </div>
             <div className="w-full lg:w-6/12 px-4">
               <h4 className="text-3xl font-semibold">Let's keep in touch!</h4>
               <h5 className="text-lg mt-4 mb-2 text-gray-700">
