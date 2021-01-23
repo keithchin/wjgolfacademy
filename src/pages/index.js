@@ -31,7 +31,7 @@ export default function Landing() {
           </div>
           <div className="container relative mx-auto">
             <div className="mt-36 items-center flex flex-wrap">
-              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center transition-all duration-500 ease-in-out">
                 <h1 className="text-white font-semibold text-5xl">
                   Your golf journey begins here.
                 </h1>
@@ -77,7 +77,13 @@ export default function Landing() {
         <section className="pb-20 bg-green-700 -mt-36">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center mt-32">
-              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div
+                className="w-full md:w-5/12 px-4 mr-auto ml-auto"
+                data-sal="slide-left"
+                data-sal-duration="5000"
+                data-sal-delay="3000"
+                data-sal-easing="ease"
+              >
                 <h3 className="text-white mt-8 text-3xl mb-2 font-semibold leading-normal">
                   Founded and established since 2018{" "}
                 </h3>
@@ -96,7 +102,13 @@ export default function Landing() {
               </div>
 
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                <div className="relative flex flex-col min-w-0 break-words bg-gray-700 w-full mb-6 shadow-lg rounded-lg">
+                <div
+                  className="relative flex flex-col min-w-0 break-words bg-gray-700 w-full mb-6 shadow-lg rounded-lg"
+                  data-sal="fade"
+                  data-sal-duration="10000"
+                  data-sal-delay="5000"
+                  data-sal-easing="ease"
+                >
                   <img
                     alt="..."
                     src="https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-9/93282369_10157709203867740_4188504144882958336_n.jpg?_nc_cat=110&ccb=2&_nc_sid=8bfeb9&_nc_ohc=KM4kTkyX258AX-SdTsB&_nc_ht=scontent.fkul16-1.fna&oh=52441dd8ca36e3e4c21dfc00e0f08048&oe=6019BA15"
@@ -135,6 +147,10 @@ export default function Landing() {
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
             style={{ height: "80px", transform: "translateZ(0)" }}
+            data-sal="fade"
+            data-sal-duration="10000"
+            data-sal-delay="5000"
+            data-sal-easing="ease"
           >
             <svg
               className="absolute bottom-0 overflow-hidden"
@@ -161,7 +177,13 @@ export default function Landing() {
                   src="https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-9/78976519_1613069965501900_6873021230740406272_n.jpg?_nc_cat=100&ccb=2&_nc_sid=8bfeb9&_nc_ohc=AdGlZB2QeQ4AX_EE4C0&_nc_ht=scontent.fkul16-1.fna&oh=5077f5e82e9df72056a297d8791111f6&oe=60193943"
                 />
               </div>
-              <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div
+                className="w-full md:w-5/12 ml-auto mr-auto px-4"
+                data-sal="slide-left"
+                data-sal-duration="5000"
+                data-sal-delay="3000"
+                data-sal-easing="ease"
+              >
                 <div className="md:pr-12">
                   <h3 className="text-4xl mb-2 mt-2 font-bold leading-normal">
                     Ready to take your game to the next level?
@@ -235,7 +257,13 @@ export default function Landing() {
                 <p className="text-lg leading-relaxed m-4 text-gray-600"></p>
               </div>
             </div>
-            <div className="flex flex-wrap">
+            <div
+              className="flex flex-wrap"
+              data-sal="slide-up"
+              data-sal-duration="10000"
+              data-sal-delay="15000"
+              data-sal-easing="ease"
+            >
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
                   <img
