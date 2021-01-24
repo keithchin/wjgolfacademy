@@ -31,32 +31,30 @@ export default function Navbar(props, color) {
       >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <div className="row inline-block">
-              <AniLink
-                swipe
-                direction="down"
-                className={
-                  (props.transparent ? "text-white" : "text-gray-800") +
-                  " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
-                }
-                to="/"
-              >
-                <img
-                  alt="..."
-                  src={require("../images/wj-logo-transparent.png")}
-                  className="shadow-lg rounded-full max-w-full mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                  style={{ maxWidth: "140px" }}
-                />
-              </AniLink>
-              <AniLink
-                swipe
-                direction="up"
-                to="/coaches"
-                className="text-white px-6 text-center place-self-center"
-              >
-                Coaches
-              </AniLink>{" "}
-            </div>
+            <AniLink
+              swipe
+              direction="down"
+              className={
+                (props.transparent ? "text-white" : "text-gray-800") +
+                " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase align-center"
+              }
+              to="/"
+            >
+              <img
+                alt="..."
+                src={require("../images/wj-logo-transparent.png")}
+                className="shadow-lg rounded-full max-w-full mx-auto transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                style={{ maxWidth: "140px" }}
+              />
+            </AniLink>
+            <AniLink
+              swipe
+              direction="up"
+              to="/coaches"
+              className="text-white px-6 text-center place-self-center"
+            >
+              Coaches
+            </AniLink>{" "}
           </div>
           <div
             className={

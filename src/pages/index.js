@@ -5,6 +5,10 @@ import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 import ReactWhatsapp from "react-whatsapp";
 import TeamIndex from "../components/TeamIndex";
+import VisionIndex from "../components/VisionIndex";
+import EventsIndex from "../components/EventsIndex";
+import BackgroundSlider from "gatsby-image-background-slider";
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function Landing() {
   return (
@@ -19,11 +23,39 @@ export default function Landing() {
         >
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
-            style={{
-              backgroundImage:
-                "url('https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-9/88013553_1697191627089733_1056772300839321600_n.jpg?_nc_cat=104&ccb=2&_nc_sid=8bfeb9&_nc_ohc=TN0Yk_G-V2oAX-dvjRE&_nc_ht=scontent.fkul16-1.fna&oh=fe42a2141e7066b05400c75de6b083d0&oe=6019FF9E')",
-            }}
+            // style={{
+            //   backgroundImage:
+            //     "url('https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-9/88013553_1697191627089733_1056772300839321600_n.jpg?_nc_cat=104&ccb=2&_nc_sid=8bfeb9&_nc_ohc=TN0Yk_G-V2oAX-dvjRE&_nc_ht=scontent.fkul16-1.fna&oh=fe42a2141e7066b05400c75de6b083d0&oe=6019FF9E')",
+            // }}
           >
+            <BackgroundSlider
+              query={useStaticQuery(graphql`
+                query {
+                  backgrounds: allFile(
+                    filter: { sourceInstanceName: { eq: "images" } }
+                  ) {
+                    nodes {
+                      relativePath
+                      childImageSharp {
+                        fluid(maxWidth: 4000, quality: 100) {
+                          ...GatsbyImageSharpFluid
+                        }
+                      }
+                    }
+                  }
+                }
+              `)}
+              initDelay={2} // delay before the first transition (if left at 0, the first image will be skipped initially)
+              transition={4} // transition duration between images
+              duration={8} // how long an image is shown
+              // specify images to include (and their order) according to `relativePath`
+              images={["background-1.jpg", "background-2.jpg"]}
+              // pass down standard element props
+              // style={{
+              //   transform: "rotate(-2deg) scale(.9)",
+              // }}
+            />
+
             <span
               id="blackOverlay"
               className="w-full h-full absolute opacity-75 bg-black"
@@ -78,32 +110,31 @@ export default function Landing() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center mt-32">
               <div
-                className="w-full md:w-5/12 px-4 mr-auto ml-auto"
+                className="w-full md:w-5/12 px-4 mr-auto ml-auto mb-2"
                 data-sal="slide-left"
-                data-sal-duration="5000"
+                data-sal-duration="25000"
                 data-sal-delay="3000"
                 data-sal-easing="ease"
               >
-                <h3 className="text-white mt-8 text-3xl mb-2 font-semibold leading-normal">
-                  Founded and established since 2018{" "}
+                <h3 className="text-white mt-24 md:mt-12 text-5xl sm:text-5l text-center mb-2 font-semibold leading-normal">
+                  About Us{" "}
                 </h3>
-                <p className="text-white text-md font-light leading-relaxed mt-4 mb-4 ">
-                  At WJ Golf Academy, our promise to you is to deliver:
+                <p className="text-white text-md font-light leading-relaxed mt-8 mb-4 ">
+                  Our academy was established in the year 2018, with the mission
+                  of providing a platform for beginner and intermediate golfers
+                  using the latest golf radar technology, TrackMan™.
                 </p>
-                <p className="text-white text-md font-light leading-relaxed mt-0 mb-4 ">
-                  ✔️ Professional lessons with guaranteed results
-                </p>
-                <p className="text-white text-md font-light leading-relaxed mt-0 mb-4 ">
-                  ✔️ Coaching for golfers at all levels
-                </p>
-                <p className="text-white text-md font-light leading-relaxed mt-0 mb-4 ">
-                  ✔️ Access to a world class golf facility
+                <p className="text-white text-md font-light leading-relaxed mt-8 mb-4 pt-2">
+                  Headed by Coach Wilson Choo, and managed by partner, Justin
+                  Chin, we are located in Saujana Golf & Country Club, which
+                  hosts a world-class driving range as well as a PGA certified
+                  golf course.
                 </p>
               </div>
 
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-16">
                 <div
-                  className="relative flex flex-col min-w-0 break-words bg-gray-700 w-full mb-6 shadow-lg rounded-lg"
+                  className="relative flex flex-col min-w-0 break-words bg-blue-900 w-full mb-6 shadow-lg rounded-lg"
                   data-sal="fade"
                   data-sal-duration="10000"
                   data-sal-delay="5000"
@@ -118,7 +149,7 @@ export default function Landing() {
                     <svg
                       preserveAspectRatio="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
+                      viewBox="0 0 383 95"
                       className="absolute left-0 w-full block"
                       style={{
                         height: "95px",
@@ -127,13 +158,13 @@ export default function Landing() {
                     >
                       <polygon
                         points="-30,95 583,95 583,65"
-                        className="text-gray-700 fill-current"
+                        className="text-blue-900 fill-current"
                       ></polygon>
                     </svg>
-                    <h4 className="text-xl font-bold text-white">
+                    <h4 className="text-xl text-center font-bold text-white">
                       Our Founders
                     </h4>
-                    <p className="text-md font-light mt-2 text-white">
+                    <p className="text-md text-center font-light mt-2 text-white">
                       Justin Chin and Wilson Choo
                     </p>
                   </blockquote>
@@ -173,8 +204,8 @@ export default function Landing() {
               <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
                 <img
                   alt="..."
-                  className="max-w-full rounded-lg shadow-xl"
-                  src="https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-9/78976519_1613069965501900_6873021230740406272_n.jpg?_nc_cat=100&ccb=2&_nc_sid=8bfeb9&_nc_ohc=AdGlZB2QeQ4AX_EE4C0&_nc_ht=scontent.fkul16-1.fna&oh=5077f5e82e9df72056a297d8791111f6&oe=60193943"
+                  className="max-w-full rounded-lg shadow-xl h-90 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                  src="https://scontent.fkul16-1.fna.fbcdn.net/v/t1.0-9/65250017_1470238616451703_373742998921412608_n.jpg?_nc_cat=101&ccb=2&_nc_sid=8bfeb9&_nc_ohc=sBIbA1i8qCgAX9zuXnj&_nc_ht=scontent.fkul16-1.fna&oh=e3b4c5f79329c41b500ae25e6dbfd8cd&oe=6033C36B"
                 />
               </div>
               <div
@@ -185,7 +216,7 @@ export default function Landing() {
                 data-sal-easing="ease"
               >
                 <div className="md:pr-12">
-                  <h3 className="text-4xl mb-2 mt-2 font-bold leading-normal">
+                  <h3 className="text-5xl pb-8 mb-8 mt-16 font-bold text-center sm:leading-normal">
                     Ready to take your game to the next level?
                   </h3>
                   <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"></p>
@@ -198,7 +229,7 @@ export default function Landing() {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">
+                          <h4 className="text-gray-600 pl-1">
                             Lessons with seasoned and touring professionals{" "}
                           </h4>
                         </div>
@@ -227,12 +258,12 @@ export default function Landing() {
                         </div>
                         <div>
                           <h4 className="text-gray-600">
-                            Coaching programs for Juniors and Seniors
+                            World-class training with Trackman™ analysis
                           </h4>
                         </div>
                       </div>
                     </li>
-                    <li className="py-2">
+                    {/* <li className="py-2">
                       <div className="flex items-center">
                         <a
                           href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
@@ -241,7 +272,7 @@ export default function Landing() {
                           Check out our services!
                         </a>
                       </div>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -250,110 +281,17 @@ export default function Landing() {
         </section>
         {/* Team Section */}
         <section className="pt-20 pb-48">
-          <TeamIndex />
+          {/* <TeamIndex /> */}
+          <VisionIndex />
         </section>
 
-        <section className="pb-20 relative block bg-gray-900">
-          <div
-            className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style={{ height: "80px", transform: "translateZ(0)" }}
-          >
-            <svg
-              className="absolute bottom-0 overflow-hidden"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                className="text-gray-900 fill-current"
-                points="2560 0 2560 100 0 100"
-              ></polygon>
-            </svg>
-          </div>
-
-          <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
-            {/* <div className="flex flex-wrap text-center justify-center">
-              <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold text-white">
-                  Past Events{" "}
-                </h2>
-              </div>
-            </div> */}
-            {/* <div className="flex flex-wrap mt-12 justify-center">
-              <div className="w-full lg:w-3/12 px-4 text-center">
-                <div className="text-gray-900 p-3 w-12 h-12  inline-flex items-center justify-center">
-                  <img
-                    alt="..."
-                    src={require("../images/danny-chia.png")}
-                    className=" max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />{" "}
-                </div>
-                <h6 className="text-xl mt-5 font-semibold text-white">
-                  Excelent Services
-                </h6>
-                <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-              <div className="w-full lg:w-3/12 px-4 text-center">
-                <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-poll text-xl"></i>
-                </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
-                  Grow your market
-                </h5>
-                <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-              <div className="w-full lg:w-3/12 px-4 text-center">
-                <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-lightbulb text-xl"></i>
-                </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
-                  Launch time
-                </h5>
-                <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div> */}
-          </div>
+        <section className="pb-20 relative bg-gray-900">
+          <EventsIndex />
         </section>
         <section
           className="relative block py-24 lg:pt-0 bg-gray-900"
           id="contact"
-        >
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-              <div className="w-full lg:w-6/12 px-4">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
-                  <div className="flex-auto p-5 lg:p-10">
-                    <div>
-                      <iframe
-                        src="https://www.instagram.com/wjgolfacademy/embed"
-                        frameborder="0"
-                        allowfullscreen
-                        scrolling="no"
-                        allowtransparency
-                        width="320"
-                        height="320"
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        ></section>
       </main>
       <Footer />
     </>

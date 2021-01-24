@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import ReactWhatsapp from "react-whatsapp";
 
-export default function Footer() {
+export default function TeamIndex() {
   return (
     <div className="container mx-auto px-4">
       <div className="flex flex-wrap justify-center text-center mb-24">
