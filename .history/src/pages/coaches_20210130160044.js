@@ -65,8 +65,8 @@ export default function Landing() {
           >
             <div className="flex flex-wrap"></div>
 
-            <div className="flex flex-wrap items-center">
-              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-32 sm:mt-8">
+            <div className="flex flex-wrap items-center sm:mt-32">
+              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-16sm:mt-32">
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
                   Wilson Choo
                 </h3>
@@ -84,7 +84,7 @@ export default function Landing() {
                 </p>
               </div>
 
-              <div className="w-full md:w-4/12 px-4 sm:mt-32 mr-auto ml-auto">
+              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-600">
                   <img
                     alt="..."

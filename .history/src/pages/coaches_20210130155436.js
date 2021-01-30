@@ -65,26 +65,26 @@ export default function Landing() {
           >
             <div className="flex flex-wrap"></div>
 
-            <div className="flex flex-wrap items-center">
-              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-32 sm:mt-8">
+            <div className="flex flex-wrap items-center mt-32">
+              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
                   Wilson Choo
                 </h3>
-                <p className="text-xs italic font-light leading-relaxed mt-1 mb-4 text-gray-700">
+                <p className="text-sm italic font-light leading-relaxed mt-4 mb-4 text-gray-700">
                   Founder / Head Instructor{" "}
                 </p>
-                <p className="text-sm font-light leading-relaxed mt-0 mb-2 text-gray-700">
-                  ✔️ Turned Professional in 2010
+                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                  ✔️ Lessons with seasoned and touring professionals
                 </p>
-                <p className="text-sm font-light leading-relaxed mt-0 mb-2 text-gray-700">
-                  ✔️ National Player for Malaysia (2006-08)
+                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                  ✔️ Access to state of the art equipments and facilities
                 </p>
-                <p className="text-sm font-light leading-relaxed mt-0 mb-2 text-gray-700">
-                  ✔️ Achieved a career high world ranking of 717
+                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                  ✔️ Coaching programs for Juniors and Seniors
                 </p>
               </div>
 
-              <div className="w-full md:w-4/12 px-4 sm:mt-32 mr-auto ml-auto">
+              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-green-600">
                   <img
                     alt="..."
